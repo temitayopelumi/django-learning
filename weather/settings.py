@@ -13,6 +13,7 @@ https://docs.djangoproject.com/en/3.1/ref/settings/
 from pathlib import Path
 import os
 
+
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
@@ -21,7 +22,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/3.1/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = '^fn7hk0_zyighy^&n&mlvxxfj9d8#4bm(s*m5$s_@&r^)m3f0m'
+SECRET_KEY = '^rdvfaz3#93$q4bozsp2&=oswy3bc-ww@m&uwt($@=8m+w8!h&'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -39,6 +40,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'check',
+    'django_filters',
 ]
 
 MIDDLEWARE = [
@@ -120,4 +122,6 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.1/howto/static-files/
 
 STATIC_URL = '/static/'
+MEDIA_URL = '/images/'
 
+MEDIA_ROOT=os.path.join(BASE_DIR, 'img/images')
