@@ -39,7 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'check',
+    'check.apps.CheckConfig',
     'django_filters',
 ]
 
@@ -125,3 +125,11 @@ STATIC_URL = '/static/'
 MEDIA_URL = '/images/'
 
 MEDIA_ROOT=os.path.join(BASE_DIR, 'img/images')
+
+
+EMAIL_BACKEND = "django.core.mail.backends.smtp.EmailBackend"
+EMAIL_USE_TLS = True
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_PORT = 587
+EMAIL_HOST_USER = 'olalekantemitayo7@gmail.com'
+EMAIL_HOST_PASSWORD =  'oluwapelumi'

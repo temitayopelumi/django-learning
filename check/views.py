@@ -10,6 +10,7 @@ from django.contrib.auth.decorators import login_required
 from .decorators import unauthenticated_user,allowed_users,admin_only
 from django.contrib.auth.models import Group
 
+
 def home(request):
     return render(request, 'check/home.html')
 
@@ -62,9 +63,6 @@ def registerPage(request):
         if form.is_valid():
             user=form.save()
             username =  form.cleaned_data.get('username')
-            group = Group.objects.get(name='customer')
-            user.groups.add(group)
-            Customer.objects.create(user=user)
             messages.success(request, 'Account was created for'+username)
             return redirect('login')
     

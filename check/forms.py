@@ -6,7 +6,7 @@ from django.contrib.auth.models import User
 
 
 class OrderForm(ModelForm):
-    class Meta:
+    class Meta: 
         model = Order
         fields ='__all__'
 
