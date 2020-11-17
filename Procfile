@@ -1,1 +1,1 @@
-web: gunicorn todo.wsgi --log-file -
+web: gunicorn weather.wsgi --log-file -
