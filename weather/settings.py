@@ -27,7 +27,7 @@ SECRET_KEY = '^rdvfaz3#93$q4bozsp2&=oswy3bc-ww@m&uwt($@=8m+w8!h&'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['sheltered-ravine-80767.herokuapp.com/','127.0.0.1']
+ALLOWED_HOSTS = ['sheltered-ravine-80767.herokuapp.com','127.0.0.1']
 
 
 # Application definition
