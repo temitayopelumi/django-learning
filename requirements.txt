@@ -1,0 +1,31 @@
+# This file may be used to create an environment using:
+# $ conda create --name <env> --file <this file>
+# platform: win-64
+asgiref==3.2.10
+#beautifulsoup4==4.9.3
+certifi==2020.6.20
+dj-database-url==0.5.0
+django==3.1.2
+#django-bootstrap4=2.3.1
+django-filter==2.4.0
+django-heroku==0.3.1
+django-tinymce4-lite==1.8.0
+gunicorn==20.0.4
+importlib-metadata==2.0.0
+jsmin==2.2.2
+pillow==8.0.1
+#pip==20.2.4
+#psycopg2==2.8.6
+#python == 3.6.11
+python-dotenv==0.15.0
+#python_abi==3.6
+pytz==2020.1
+setuptools==49.6.0
+soupsieve==2.0.1
+sqlparse==0.4.1
+# vc==14.1
+# vs2015_runtime==14.16.27012
+wheel==0.35.1
+whitenoise==5.2.0
+wincertstore==0.2
+zipp==3.4.0
